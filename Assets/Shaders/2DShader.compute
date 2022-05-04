@@ -1,0 +1,94 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel AddSource
+#pragma kernel Diffuse
+#pragma kernel Initialize
+#pragma kernel Advect
+#pragma kernel AddSourceTexture
+#pragma kernel DensityFade
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+RWTexture2D<float4> Input;
+
+RWTexture2D<float4> u;
+RWTexture2D<float4> v;
+RWTexture2D<float4> uPrev;
+RWTexture2D<float4> vPrev;
+
+float dt;
+float Resolution;
+float Range;
+float Diff;
+float N;
+
+float mouseX;
+float mouseY;
+
+
+[numthreads(8,8,1)]
+void AddSource(uint3 id : SV_DispatchThreadID) {
+    float strength = 0.5f;
+
+    if (id.x < mouseX + Range && id.x > mouseX - Range && id.y < mouseY + Range && id.y > mouseY - Range) {
+        Result[id.xy] = float4(strength, strength, strength, 0.0);
+    }
+}
+
+[numthreads(8,8,1)]
+void Diffuse(uint3 id : SV_DispatchThreadID) {
+    float a = dt * N * N * Diff;
+    Result[id.xy] = Input[id.xy] + a * (Input[id.xy - uint2(1, 0)] + Input[id.xy + uint2(1, 0)] + Input[id.xy - uint2(0, 1)] + Input[id.xy + uint2(0, 1)]) / (1 + 4 * a);
+}
+
+[numthreads(8, 8, 1)]
+void Initialize(uint3 id : SV_DispatchThreadID) {
+    Result[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
+    u[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
+    v[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
+    uPrev[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
+    vPrev[id.xy] = float4(0.2, 0.0, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void Advect(uint3 id : SV_DispatchThreadID) {
+    float dt0 = dt * N;
+    float x0, y0, s0, s1, t0, t1;
+
+    int i0, j0, i1, j1;
+
+    uint2 coords = id.xy;
+
+    x0 = coords.x - dt0 * u[coords];
+    y0 = coords.y - dt0 * v[coords];
+
+    if (x0 < 0.5) x0 = 0.5;
+    if (y0 < 0.5) y0 = 0.5;
+
+    if (x0 > N + 0.5) x0 = N + 0.5;
+    if (y0 > N + 0.5) y0 = N + 0.5;
+
+    i0 = (int)x0;
+    j0 = (int)y0;
+    
+    i1 = i0 + 1;
+    j1 = j0 + 1;
+    
+    s1 = x0 - i0;
+    s0 = 1 - s1;
+    t1 = y0 - j0;
+    t0 = 1 - t1;
+
+    Result[coords] = s0 * (t0 * Input[uint2(i0, j0)] + t1 * Input[uint2(i0, j1)]) +
+        s1 * (t0 * Input[uint2(i1, j0)] + t1 * Input[uint2(i1, j1)]);
+}
+
+[numthreads(8, 8, 1)]
+void AddSourceTexture(uint3 id : SV_DispatchThreadID) {
+    Result[id.xy] = Result[id.xy] + dt * Input[id.xy];
+}
+
+[numthreads(8, 8, 1)]
+void DensityFade(uint3 id : SV_DispatchThreadID) {
+    Result[id.xy] = Result[id.xy] - dt;
+}

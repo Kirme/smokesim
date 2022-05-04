@@ -1,0 +1,230 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+Cmd: compileComputeKernel
+  insize=724 file=Assets/Shaders/2DShader.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(21): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=224
+
+Cmd: compileComputeKernel
+  insize=1099 file=Assets/Shaders/2DShader.compute kernel=AddSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(24): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=725
+
+Cmd: compileComputeKernel
+  insize=1903 file=Assets/Shaders/2DShader.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(55): implicit truncation of vector type
+  error: 2 plat 4 at 2DShader.compute(70): undeclared identifier 'y'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=1892 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(55): implicit truncation of vector type
+  error: 2 plat 4 at 2DShader.compute(70): undeclared identifier 'y'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=1892 file=Assets/Shaders/2DShader.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(55): implicit truncation of vector type
+  error: 2 plat 4 at 2DShader.compute(70): undeclared identifier 'y'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=1914 file=Assets/Shaders/2DShader.compute kernel=AddSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(55): implicit truncation of vector type
+ ok=1 outsize=725
+
+Cmd: compileComputeKernel
+  insize=1916 file=Assets/Shaders/2DShader.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(55): implicit truncation of vector type
+ ok=1 outsize=313
+
+Cmd: compileComputeKernel
+  insize=1928 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(55): implicit truncation of vector type
+  error: 2 plat 4 at 2DShader.compute(73): undeclared identifier 'y'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=1899 file=Assets/Shaders/2DShader.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(55): implicit truncation of vector type
+ ok=1 outsize=1066
+
+Cmd: compileComputeKernel
+  insize=1987 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(56): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(57): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=1987 file=Assets/Shaders/2DShader.compute kernel=AddSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(29): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(56): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(57): implicit truncation of vector type
+ ok=1 outsize=725
+
+Cmd: compileComputeKernel
+  insize=2139 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(31): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(60): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(61): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=2139 file=Assets/Shaders/2DShader.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(31): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(60): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(61): implicit truncation of vector type
+ ok=1 outsize=613
+
+Cmd: compileComputeKernel
+  insize=2349 file=Assets/Shaders/2DShader.compute kernel=AddSourceTexture cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=574
+
+Cmd: compileComputeKernel
+  insize=2349 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=2352 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=2357 file=Assets/Shaders/2DShader.compute kernel=AddSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 2 plat 4 at 2DShader.compute(27): syntax error: unexpected token '['
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=2331 file=Assets/Shaders/2DShader.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=1066
+
+Cmd: compileComputeKernel
+  insize=2330 file=Assets/Shaders/2DShader.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=1066
+
+Cmd: compileComputeKernel
+  insize=2318 file=Assets/Shaders/2DShader.compute kernel=AddSourceTexture cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=574
+
+Cmd: compileComputeKernel
+  insize=2330 file=Assets/Shaders/2DShader.compute kernel=AddSourceTexture cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=574
+
+Cmd: compileComputeKernel
+  insize=2330 file=Assets/Shaders/2DShader.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=613
+
+Cmd: compileComputeKernel
+  insize=2330 file=Assets/Shaders/2DShader.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=1066
+
+Cmd: compileComputeKernel
+  insize=2330 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=2330 file=Assets/Shaders/2DShader.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(34): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(64): implicit truncation of vector type
+ ok=1 outsize=613
+
+Cmd: compileComputeKernel
+  insize=2311 file=Assets/Shaders/2DShader.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(32): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(61): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+ ok=1 outsize=613
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=613
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=DensityFade cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=492
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=1066
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=AddSourceTexture cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=574
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=613
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=2461 file=Assets/Shaders/2DShader.compute kernel=AddSourceTexture cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=574
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=613
+
+Cmd: compileComputeKernel
+  insize=2460 file=Assets/Shaders/2DShader.compute kernel=Advect cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202131> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 4 at 2DShader.compute(33): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at 2DShader.compute(62): implicit truncation of vector type
+  error: 1 plat 4 at 2DShader.compute(63): implicit truncation of vector type
+ ok=1 outsize=1607
+
+Cmd: shutdown
