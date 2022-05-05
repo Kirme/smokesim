@@ -4,18 +4,31 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
+    // Global Variables
     [SerializeField] private ComputeShader computeShader;
     [SerializeField] private RenderTexture renderTexture;
+    [SerializeField] private RenderTexture previousTexture;
+
+    [SerializeField] private RenderTexture velocityField;
+    private RenderTexture velocityDivergence;
+    private RenderTexture cachedVelocityField;
+
+    [SerializeField] private RenderTexture pressureField;
+    private RenderTexture previousPressure;
+    private RenderTexture pressureGradient;
+
+    [SerializeField] private RenderTexture temperatureField;
 
     [SerializeField] private float diffusionFactor;
-
-    [SerializeField] private RenderTexture previousTexture;
-    [SerializeField] private RenderTexture velocityField;
-
+    private float T0 = 0.5f;
+    private float buoyancyScale = 10f;
+    
     private int size = 512;
     private int speed = 1;
     private int xThreads, yThreads;
+    private int projectIter = 20;
 
+    // Indexes of kernels in computeShader
     static class Kernels
     {
         public const int Initialize = 0;
@@ -23,34 +36,49 @@ public class Main : MonoBehaviour
         public const int Advection = 2;
         public const int UserInput = 3;
         public const int InitializeVelocity = 4;
+        public const int Project = 5;
+        public const int Divergence = 6;
+        public const int Gradient = 7;
+        public const int SubtractGradient = 8;
+        public const int ConstantSource = 9;
+        public const int Buoyancy = 10;
+        public const int InitializeTemperature = 11;
     }
 
+    void InitializeTexture(ref RenderTexture rt)
+    {
+        if (rt == null)
+        {
+            rt = new RenderTexture(size, size, 24);
+            rt.enableRandomWrite = true;
+
+            rt.Create();
+        }
+    }
 
     void InitializeTextures()
     {
-        if (renderTexture == null)
-        {
-            renderTexture = new RenderTexture(size, size, 24);
-            renderTexture.enableRandomWrite = true;
+        InitializeTexture(ref renderTexture);
+        InitializeTexture(ref previousTexture);
 
-            renderTexture.Create();
-        }
+        InitializeTexture(ref velocityField);
+        InitializeTexture(ref velocityDivergence);
+        InitializeTexture(ref cachedVelocityField);
 
-        if (previousTexture == null)
-        {
-            previousTexture = new RenderTexture(size, size, 24);
-            previousTexture.enableRandomWrite = true;
+        InitializeTexture(ref pressureField);
+        InitializeTexture(ref previousPressure);
+        InitializeTexture(ref pressureGradient);
 
-            previousTexture.Create();
-        }
+        InitializeTexture(ref temperatureField);
+    }
 
-        if (velocityField == null)
-        {
-            velocityField = new RenderTexture(size, size, 24);
-            velocityField.enableRandomWrite = true;
-
-            velocityField.Create();
-        }
+    void Buoyancy()
+    {
+        computeShader.SetFloat("T0", T0);
+        computeShader.SetFloat("buoyancyScale", buoyancyScale);
+        computeShader.SetTexture(Kernels.Buoyancy, "Temperature", temperatureField);
+        computeShader.SetTexture(Kernels.Buoyancy, "Velocity", velocityField);
+        computeShader.Dispatch(Kernels.Buoyancy, xThreads, yThreads, 1);
     }
 
     void Start()
@@ -69,6 +97,10 @@ public class Main : MonoBehaviour
 
         computeShader.SetTexture(Kernels.InitializeVelocity, "Velocity", velocityField);
         computeShader.Dispatch(Kernels.InitializeVelocity, xThreads, yThreads, 1);
+
+        computeShader.SetFloat("screenHeight", Screen.height);
+        computeShader.SetTexture(Kernels.InitializeTemperature, "Temperature", temperatureField);
+        computeShader.Dispatch(Kernels.InitializeTemperature, xThreads, yThreads, 1);
     }
 
     void Diffuse()
@@ -104,9 +136,46 @@ public class Main : MonoBehaviour
         computeShader.Dispatch(Kernels.Advection, xThreads, yThreads, 1);
     }
 
+    void Divergence()
+    {
+        computeShader.SetTexture(Kernels.Divergence, "Velocity", velocityField);
+        computeShader.SetTexture(Kernels.Divergence, "VelocityDivergence", velocityDivergence);
+        computeShader.Dispatch(Kernels.Divergence, xThreads, yThreads, 1);
+    }
+
+    void Gradient()
+    {
+        computeShader.SetTexture(Kernels.Gradient, "VelocityDivergence", velocityDivergence);
+        computeShader.SetTexture(Kernels.Gradient, "Previous", pressureField);
+        computeShader.SetTexture(Kernels.Gradient, "Result", pressureGradient);
+        computeShader.Dispatch(Kernels.Gradient, xThreads, yThreads, 1);
+    }
+
+    void SubtractGradient()
+    {
+        computeShader.SetTexture(Kernels.SubtractGradient, "Input", pressureGradient);
+        computeShader.SetTexture(Kernels.SubtractGradient, "Result", velocityField);
+        computeShader.Dispatch(Kernels.SubtractGradient, xThreads, yThreads, 1);
+    }
+
     void Project()
     {
+        Divergence();
 
+        computeShader.SetTexture(Kernels.Project, "VelocityDivergence", velocityDivergence);
+
+        for (int i = 0; i < projectIter; i++)
+        {
+            Graphics.CopyTexture(pressureField, previousPressure);
+
+            computeShader.SetTexture(Kernels.Project, "Previous", previousPressure);
+            computeShader.SetTexture(Kernels.Project, "Result", pressureField);
+            computeShader.Dispatch(Kernels.Project, xThreads, yThreads, 1);
+        }
+
+        Gradient();
+
+        SubtractGradient();
     }
 
     void FixedUpdate()
@@ -117,11 +186,14 @@ public class Main : MonoBehaviour
 
         
         Diffuse();
-        //Project();
+        Project();
         Advect();
-        //Project();
+        Buoyancy();
+        Project();
         UserInput();
 
+        computeShader.SetTexture(Kernels.ConstantSource, "Result", renderTexture);
+        computeShader.Dispatch(Kernels.ConstantSource, xThreads, yThreads, 1);
     }
 
     private void OnRenderImage(RenderTexture src, RenderTexture dest)

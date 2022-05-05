@@ -1,3 +1,555 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+Cmd: compileComputeKernel
+  insize=1630 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(50): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(58): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=959
+
+Cmd: compileComputeKernel
+  insize=1699 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Advection cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(60): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=552
+
+Cmd: compileComputeKernel
+  insize=2000 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(60): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=2027 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Advection cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(53): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(61): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=552
+
+Cmd: compileComputeKernel
+  insize=2001 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(53): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(61): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=959
+
+Cmd: compileComputeKernel
+  insize=2233 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=InitializeVelocity cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(53): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(61): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=323
+
+Cmd: compileComputeKernel
+  insize=2342 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Advection cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(62): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=552
+
+Cmd: compileComputeKernel
+  insize=2575 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=UserInput cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(54): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(62): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(91): implicit truncation of vector type
+ ok=1 outsize=741
+
+Cmd: compileComputeKernel
+  insize=2774 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(56): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(93): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=2774 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(56): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(93): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=2865 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Divergence cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(59): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(96): implicit truncation of vector type
+ ok=1 outsize=693
+
+Cmd: compileComputeKernel
+  insize=2864 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=SubtractGradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<;=1>,<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(59): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(96): implicit truncation of vector type
+ ok=1 outsize=472
+
+Cmd: compileComputeKernel
+  insize=2864 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=InitializeVelocity cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(59): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(96): implicit truncation of vector type
+ ok=1 outsize=411
+
+Cmd: compileComputeKernel
+  insize=3064 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(51): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(67): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(75): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(104): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3064 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(51): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(67): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(75): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(104): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3087 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3087 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3088 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3088 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3087 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=SubtractGradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=472
+
+Cmd: compileComputeKernel
+  insize=3087 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=InitializeVelocity cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=323
+
+Cmd: compileComputeKernel
+  insize=3174 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=ConstantSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(70): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(72): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(80): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(109): implicit truncation of vector type
+ ok=1 outsize=521
+
+Cmd: compileComputeKernel
+  insize=3174 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(70): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(72): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(80): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(109): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3174 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(70): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(72): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(80): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(109): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3190 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Advection cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(70): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(72): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(80): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(109): implicit truncation of vector type
+ ok=1 outsize=660
+
+Cmd: compileComputeKernel
+  insize=3190 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(70): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(72): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(80): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(109): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3190 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(70): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(72): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(80): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(109): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3092 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 2 plat 4 at Solver2D.compute(71): syntax error: unexpected token '}'
+  error: 2 plat 4 at Solver2D.compute(79): syntax error: unexpected token '}'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3092 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 2 plat 4 at Solver2D.compute(71): syntax error: unexpected token '}'
+  error: 2 plat 4 at Solver2D.compute(79): syntax error: unexpected token '}'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3159 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=ConstantSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(77): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(106): implicit truncation of vector type
+ ok=1 outsize=521
+
+Cmd: compileComputeKernel
+  insize=3159 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=SubtractGradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(77): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(106): implicit truncation of vector type
+ ok=1 outsize=472
+
+Cmd: compileComputeKernel
+  insize=3159 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(77): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(106): implicit truncation of vector type
+ ok=1 outsize=959
+
+Cmd: compileComputeKernel
+  insize=3092 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3092 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3087 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=ConstantSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=521
+
+Cmd: compileComputeKernel
+  insize=3087 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=SubtractGradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=472
+
+Cmd: compileComputeKernel
+  insize=3087 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=959
+
+Cmd: compileComputeKernel
+  insize=3087 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=UserInput cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(52): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(68): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(76): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(105): implicit truncation of vector type
+ ok=1 outsize=741
+
+Cmd: compileComputeKernel
+  insize=3196 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=InitializeVelocity cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(53): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(69): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(77): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(106): implicit truncation of vector type
+ ok=1 outsize=323
+
+Cmd: compileComputeKernel
+  insize=3389 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Divergence cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(61): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(77): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(85): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(114): implicit truncation of vector type
+ ok=1 outsize=693
+
+Cmd: compileComputeKernel
+  insize=3410 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Buoyancy cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(62): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(78): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(86): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(115): implicit truncation of vector type
+ ok=1 outsize=225
+
+Cmd: compileComputeKernel
+  insize=3410 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=UserInput cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(62): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(78): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(86): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(115): implicit truncation of vector type
+ ok=1 outsize=741
+
+Cmd: compileComputeKernel
+  insize=3430 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 2 plat 4 at Solver2D.compute(43): undeclared identifier 'mod'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3430 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 2 plat 4 at Solver2D.compute(43): undeclared identifier 'mod'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3426 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Divergence cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(62): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(78): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(86): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(115): implicit truncation of vector type
+ ok=1 outsize=693
+
+Cmd: compileComputeKernel
+  insize=3426 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(62): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(78): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(86): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(115): implicit truncation of vector type
+ ok=1 outsize=959
+
+Cmd: compileComputeKernel
+  insize=3437 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Buoyancy cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(63): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(79): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(87): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(116): implicit truncation of vector type
+ ok=1 outsize=225
+
+Cmd: compileComputeKernel
+  insize=3437 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=UserInput cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(63): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(79): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(87): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(116): implicit truncation of vector type
+ ok=1 outsize=741
+
+Cmd: compileComputeKernel
+  insize=3478 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+  error: 2 plat 4 at Solver2D.compute(130): syntax error: unexpected token '}'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3478 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+  error: 2 plat 4 at Solver2D.compute(130): syntax error: unexpected token '}'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3554 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3554 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3556 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=ConstantSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=521
+
+Cmd: compileComputeKernel
+  insize=3556 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Advection cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=552
+
+Cmd: compileComputeKernel
+  insize=3571 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Project cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=828
+
+Cmd: compileComputeKernel
+  insize=3571 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Diffuse cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=959
+
+Cmd: compileComputeKernel
+  insize=3587 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3587 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Advection cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=552
+
+Cmd: compileComputeKernel
+  insize=3587 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3572 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Project cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=828
+
+Cmd: compileComputeKernel
+  insize=3572 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3572 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=InitializeVelocity cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=323
+
+Cmd: compileComputeKernel
+  insize=3595 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Project cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(64): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(80): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(88): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(117): implicit truncation of vector type
+ ok=1 outsize=828
+
+Cmd: compileComputeKernel
+  insize=3673 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Buoyancy cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 2 plat 4 at Solver2D.compute(46): syntax error: unexpected token '='
+  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(83): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(91): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(120): implicit truncation of vector type
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3673 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=UserInput cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 2 plat 4 at Solver2D.compute(46): syntax error: unexpected token '='
+  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(83): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(91): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(120): implicit truncation of vector type
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3674 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(83): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(91): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(120): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3705 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=UserInput cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(83): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(91): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(120): implicit truncation of vector type
+ ok=1 outsize=889
+
+Cmd: compileComputeKernel
+  insize=3674 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(83): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(91): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(120): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3674 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=SubtractGradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(83): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(91): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(120): implicit truncation of vector type
+ ok=1 outsize=472
+
+Cmd: compileComputeKernel
+  insize=3674 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Advection cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(83): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(91): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(120): implicit truncation of vector type
+ ok=1 outsize=552
+
+Cmd: compileComputeKernel
+  insize=3674 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(67): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(83): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(91): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(120): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3606 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=InitializeTemperature cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=477
+
+Cmd: compileComputeKernel
+  insize=3606 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=ConstantSource cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=521
+
+Cmd: compileComputeKernel
+  insize=3606 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Advection cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=552
+
+Cmd: compileComputeKernel
+  insize=3606 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Initialize cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=437
+
+Cmd: compileComputeKernel
+  insize=3599 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Gradient cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=523
+
+Cmd: compileComputeKernel
+  insize=3607 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=UserInput cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=889
+
+Cmd: compileComputeKernel
+  insize=3610 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Buoyancy cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=829
+
+Cmd: compileComputeKernel
+  insize=3610 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=UserInput cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=889
+
+Cmd: compileComputeKernel
+  insize=3665 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Divergence cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=693
+
+Cmd: compileComputeKernel
+  insize=3661 file=D:/Code/Repos/Unity/smokesim/Assets/Shaders/Solver2D.compute kernel=Divergence cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202039> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0  error: 1 plat 4 at Solver2D.compute(66): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(82): implicit truncation of vector type
+  error: 1 plat 4 at Solver2D.compute(90): signed/unsigned mismatch, unsigned assumed
+  error: 1 plat 4 at Solver2D.compute(119): implicit truncation of vector type
+ ok=1 outsize=693
+
+Cmd: shutdown

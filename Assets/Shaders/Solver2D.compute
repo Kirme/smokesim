@@ -4,16 +4,30 @@
 #pragma kernel Advection
 #pragma kernel UserInput
 #pragma kernel InitializeVelocity
+#pragma kernel Project
+#pragma kernel Divergence
+#pragma kernel Gradient
+#pragma kernel SubtractGradient
+#pragma kernel ConstantSource
+#pragma kernel Buoyancy
+#pragma kernel InitializeTemperature
 
 // RenderTextures
 RWTexture2D<float4> Result;
+RWTexture2D<float4> Input;
 RWTexture2D<float4> Previous;
 RWTexture2D<float4> Velocity;
+
+RWTexture2D<float> VelocityDivergence;
+RWTexture2D<float> Temperature;
 
 // Variables
 float dt;
 float diffusionFactor;
 float range;
+float screenHeight;
+float T0;
+float buoyancyScale;
 
 int speed;
 int mouseX;
@@ -22,7 +36,15 @@ int mouseY;
 [numthreads(8, 8, 1)]
 void InitializeVelocity(uint3 id : SV_DispatchThreadID)
 {
-    Velocity[id.xy] = float4(0.0, 1.0, 0.0, 0.0);
+    Velocity[id.xy] = float4(0.0, 0.5, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void InitializeTemperature(uint3 id : SV_DispatchThreadID)
+{
+    Temperature[id.xy] = 1 - (float)id.y / screenHeight;
+    
+    
 }
 
 [numthreads(8,8,1)]
@@ -31,6 +53,17 @@ void Initialize(uint3 id : SV_DispatchThreadID)
     Result[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
 
     if (id.x < 16 && id.y < 16)
+        Result[id.xy] = float4(1.0, 0.0, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void ConstantSource(uint3 id : SV_DispatchThreadID) {
+    int xPos = 256;
+    int yPos = 400;
+
+    float r = 8;
+
+    if (id.x < xPos + r && id.x > xPos - r && id.y < yPos + r && id.y > yPos - r)
         Result[id.xy] = float4(1.0, 0.0, 0.0, 0.0);
 }
 
@@ -46,9 +79,9 @@ void Diffuse(uint3 id : SV_DispatchThreadID)
 [numthreads(8, 8, 1)]
 void Advection(uint3 id : SV_DispatchThreadID)
 {
-    uint2 next = id.xy - Velocity[id.xy];
+    uint2 prev = id.xy - Velocity[id.xy];
 
-    Result[id.xy] = Previous[next];
+    Result[id.xy] = Previous[prev];
 }
 
 [numthreads(8, 8, 1)]
@@ -56,5 +89,47 @@ void UserInput(uint3 id : SV_DispatchThreadID)
 {
     if (id.x < mouseX + range && id.x > mouseX - range && id.y < mouseY + range && id.y > mouseY - range) {
         Result[id.xy] = float4(1.0, 0.0, 0.0, 0.0);
+    }
+}
+
+[numthreads(8, 8, 1)]
+void Project(uint3 id : SV_DispatchThreadID)
+{
+    float4 xAxis = Previous[id.xy + uint2(1, 0)] + Previous[id.xy - uint2(1, 0)];
+    float4 yAxis = Previous[id.xy + uint2(0, 1)] + Previous[id.xy - uint2(0, 1)];
+
+    Result[id.xy] = (xAxis + yAxis - VelocityDivergence[id.xy]) / 4;
+}
+
+[numthreads(8, 8, 1)]
+void Divergence(uint3 id : SV_DispatchThreadID)
+{
+    float xAxis = Velocity[id.xy - uint2(1, 0)].x - Velocity[id.xy + uint2(1, 0)].x;
+    float yAxis = Velocity[id.xy - uint2(0, 1)].y - Velocity[id.xy + uint2(0, 1)].y;
+
+    VelocityDivergence[id.xy] = xAxis + yAxis;
+}
+
+[numthreads(8, 8, 1)]
+void Gradient(uint3 id : SV_DispatchThreadID)
+{
+    float xAxis = Previous[id.xy + uint2(1, 0)].x - Previous[id.xy - uint2(1, 0)].x;
+    float yAxis = Previous[id.xy + uint2(0, 1)].y - Previous[id.xy - uint2(0, 1)].y;
+
+    VelocityDivergence[id.xy] = float4(xAxis, yAxis, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void SubtractGradient(uint3 id : SV_DispatchThreadID)
+{
+    Result[id.xy] = Result[id.xy] - Input[id.xy];
+}
+
+[numthreads(8, 8, 1)]
+void Buoyancy(uint3 id : SV_DispatchThreadID)
+{
+    if (Temperature[id.xy] > T0) {
+        float4 buoyancy = buoyancyScale * (Temperature[id.xy] - T0) * float4(0.0, 1.0, 0.0, 0.0) * dt;
+        Velocity[id.xy] += buoyancy;
     }
 }
