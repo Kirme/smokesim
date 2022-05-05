@@ -1,0 +1,60 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel Initialize
+#pragma kernel Diffuse
+#pragma kernel Advection
+#pragma kernel UserInput
+#pragma kernel InitializeVelocity
+
+// RenderTextures
+RWTexture2D<float4> Result;
+RWTexture2D<float4> Previous;
+RWTexture2D<float4> Velocity;
+
+// Variables
+float dt;
+float diffusionFactor;
+float range;
+
+int speed;
+int mouseX;
+int mouseY;
+
+[numthreads(8, 8, 1)]
+void InitializeVelocity(uint3 id : SV_DispatchThreadID)
+{
+    Velocity[id.xy] = float4(0.0, 1.0, 0.0, 0.0);
+}
+
+[numthreads(8,8,1)]
+void Initialize(uint3 id : SV_DispatchThreadID)
+{
+    Result[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
+
+    if (id.x < 16 && id.y < 16)
+        Result[id.xy] = float4(1.0, 0.0, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void Diffuse(uint3 id : SV_DispatchThreadID)
+{
+    Result[id.xy] = Previous[id.xy] + diffusionFactor * dt * 
+            (Previous[id.xy + uint2(1,0)] + Previous[id.xy - uint2(1, 0)] + 
+            Previous[id.xy + uint2(0, 1)] + Previous[id.xy - uint2(0, 1)] - 
+            4 * Previous[id.xy]);
+}
+
+[numthreads(8, 8, 1)]
+void Advection(uint3 id : SV_DispatchThreadID)
+{
+    uint2 next = id.xy - Velocity[id.xy];
+
+    Result[id.xy] = Previous[next];
+}
+
+[numthreads(8, 8, 1)]
+void UserInput(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x < mouseX + range && id.x > mouseX - range && id.y < mouseY + range && id.y > mouseY - range) {
+        Result[id.xy] = float4(1.0, 0.0, 0.0, 0.0);
+    }
+}
