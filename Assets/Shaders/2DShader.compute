@@ -4,6 +4,10 @@ bool draw;
 float a;
 float c;
 
+float rScale;
+float gScale;
+float bScale;
+
 RWStructuredBuffer<float> u;
 RWStructuredBuffer<float> u0;
 RWStructuredBuffer<float> v;
@@ -86,7 +90,7 @@ void Advection(uint id : SV_DispatchThreadID)
         s1 * (t0 * d0_copy[IX(i1, j0)] + t1 * d0_copy[IX(i1, j1)]);
 
     if (draw) {
-        renderTexture[uint2(id % n, id / n)] = float4(d[id], d[id], d[id], 0.0);
+        renderTexture[uint2(id % n, id / n)] = float4(d[id] * rScale, d[id] * gScale, d[id] * bScale, 0.0);
     }
 }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Render2D : MonoBehaviour
 {
@@ -9,8 +10,10 @@ public class Render2D : MonoBehaviour
     [SerializeField] private float velocityAmount = 100f;
     [SerializeField] private float densityAmount = 300f;
     [SerializeField] private float diffusionFactor = 0.0f;
-    [SerializeField] private float timeStep = 0.125f;
+    [SerializeField] private float timeStep = 0.0f;
     [SerializeField] private bool useDeltaTime = true;
+    [SerializeField] private InputField densityInput;
+    [SerializeField] private InputField velocityInput;
 
     private float aDiffuse;
     private float cDiffuse;
@@ -20,6 +23,9 @@ public class Render2D : MonoBehaviour
     private Dictionary<string, ComputeBuffer> computeBuffers;
     private int threads;
     private int numthreads = 256;
+
+    // Color
+    private float rScale = 1.0f, gScale, bScale;
 
     // Indexes of kernels in ComputeShader
     static class Kernels
@@ -166,6 +172,11 @@ public class Render2D : MonoBehaviour
         computeShader.SetBuffer(Kernels.Advection, "u_copy", computeBuffers[u]);
         computeShader.SetBuffer(Kernels.Advection, "v_copy", computeBuffers[v]);
         computeShader.SetBool("draw", draw);
+
+        computeShader.SetFloat("rScale", rScale);
+        computeShader.SetFloat("gScale", gScale);
+        computeShader.SetFloat("bScale", bScale);
+
         computeShader.Dispatch(Kernels.Advection, threads, 1, 1);
     }
 
@@ -197,6 +208,76 @@ public class Render2D : MonoBehaviour
     private void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
         Graphics.Blit(renderTexture, dest);
+    }
+
+    // UI Functions
+
+    public void SwitchDeltaTime()
+    {
+        useDeltaTime = !useDeltaTime;
+    }
+
+    public void SetTimeStep(float newTS)
+    {
+        timeStep = newTS;
+    }
+
+    private bool CheckValidFloat(string input)
+    {
+        float floatInput;
+
+        bool isFloat = float.TryParse(input, out floatInput);
+
+        if (!isFloat)
+            return false;
+
+        return floatInput >= 0.0f;
+    }
+
+    public void SetVelocity()
+    {
+        string velocity = velocityInput.text;
+
+        if (CheckValidFloat(velocity))
+        {
+            float input;
+            float.TryParse(velocity, out input);
+
+            velocityAmount = input;
+        }
+    }
+
+    public void SetDensity()
+    {
+        string density = densityInput.text;
+
+        if (CheckValidFloat(density))
+        {
+            float input;
+            float.TryParse(density, out input);
+
+            densityAmount = input;
+        }
+    }
+
+    public void SetDiffusion(float diff)
+    {
+        diffusionFactor = diff;
+    }
+
+    public void SetRedScale(float scale)
+    {
+        rScale = scale;
+    }
+
+    public void SetGreenScale(float scale)
+    {
+        gScale = scale;
+    }
+
+    public void SetBlueScale(float scale)
+    {
+        bScale = scale;
     }
 }
 
