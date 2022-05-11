@@ -1,94 +1,109 @@
-// Each #kernel tells which function to compile; you can have many kernels
-#pragma kernel AddSource
-#pragma kernel Diffuse
-#pragma kernel Initialize
-#pragma kernel Advect
-#pragma kernel AddSourceTexture
-#pragma kernel DensityFade
-
-// Create a RenderTexture with enableRandomWrite flag and set it
-// with cs.SetTexture
-RWTexture2D<float4> Result;
-RWTexture2D<float4> Input;
-
-RWTexture2D<float4> u;
-RWTexture2D<float4> v;
-RWTexture2D<float4> uPrev;
-RWTexture2D<float4> vPrev;
-
+int n;
 float dt;
-float Resolution;
-float Range;
-float Diff;
-float N;
+bool draw;
+float a;
+float c;
 
-float mouseX;
-float mouseY;
+RWStructuredBuffer<float> u;
+RWStructuredBuffer<float> u0;
+RWStructuredBuffer<float> v;
+RWStructuredBuffer<float> v0;
+RWStructuredBuffer<float> d;
+RWStructuredBuffer<float> d0;
 
+RWStructuredBuffer<float> p;
+RWStructuredBuffer<float> div;
+RWStructuredBuffer<float> x;
+RWStructuredBuffer<float> x0;
+RWStructuredBuffer<float> s;
 
-[numthreads(8,8,1)]
-void AddSource(uint3 id : SV_DispatchThreadID) {
-    float strength = 0.5f;
+StructuredBuffer<float> d0_copy;
+StructuredBuffer<float> u_copy;
+StructuredBuffer<float> v_copy;
 
-    if (id.x < mouseX + Range && id.x > mouseX - Range && id.y < mouseY + Range && id.y > mouseY - Range) {
-        Result[id.xy] = float4(strength, strength, strength, 0.0);
-    }
+RWTexture2D<float4> renderTexture;
+
+#pragma kernel AddSource
+#pragma kernel Diffusion
+#pragma kernel Advection
+#pragma kernel ProjectionFirstPart
+#pragma kernel ProjectionLastPart
+
+int IX(uint i, uint j)
+{
+    return i + n * j;
 }
 
-[numthreads(8,8,1)]
-void Diffuse(uint3 id : SV_DispatchThreadID) {
-    float a = dt * N * N * Diff;
-    Result[id.xy] = Input[id.xy] + a * (Input[id.xy - uint2(1, 0)] + Input[id.xy + uint2(1, 0)] + Input[id.xy - uint2(0, 1)] + Input[id.xy + uint2(0, 1)]) / (1 + 4 * a);
+int IX(uint2 coords)
+{
+    return coords.x + n * coords.y;
 }
 
-[numthreads(8, 8, 1)]
-void Initialize(uint3 id : SV_DispatchThreadID) {
-    Result[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
-    u[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
-    v[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
-    uPrev[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
-    vPrev[id.xy] = float4(0.2, 0.0, 0.0, 0.0);
+[numthreads(256, 1, 1)]
+void AddSource(uint id : SV_DispatchThreadID)
+{
+    x[id] = x[id] + dt * s[id];
 }
 
-[numthreads(8, 8, 1)]
-void Advect(uint3 id : SV_DispatchThreadID) {
-    float dt0 = dt * N;
+[numthreads(256, 1, 1)]
+void Diffusion(uint id : SV_DispatchThreadID)
+{
+    uint2 coords = uint2(id % n, id / n);
+
+    x[id] = (x0[id] + a *
+        (x[IX(coords - uint2(1, 0))] + x[IX(coords + uint2(1, 0))] + x[IX(coords - uint2(0, 1))] + x[IX(coords + uint2(0, 1))])) / c;
+}
+
+[numthreads(256, 1, 1)]
+void Advection(uint id : SV_DispatchThreadID)
+{
+    float dt0 = dt * n;
     float x0, y0, s0, s1, t0, t1;
 
     int i0, j0, i1, j1;
-
-    uint2 coords = id.xy;
-
-    x0 = coords.x - dt0 * u[coords];
-    y0 = coords.y - dt0 * v[coords];
+    uint2 coords = uint2(id % n, id / n);
+    x0 = coords.x - dt0 * u_copy[id];
+    y0 = coords.y - dt0 * v_copy[id];
 
     if (x0 < 0.5) x0 = 0.5;
     if (y0 < 0.5) y0 = 0.5;
 
-    if (x0 > N + 0.5) x0 = N + 0.5;
-    if (y0 > N + 0.5) y0 = N + 0.5;
+    if (x0 > n + 0.5) x0 = n + 0.5;
+    if (y0 > n + 0.5) y0 = n + 0.5;
 
     i0 = (int)x0;
     j0 = (int)y0;
-    
+
     i1 = i0 + 1;
     j1 = j0 + 1;
-    
+
     s1 = x0 - i0;
     s0 = 1 - s1;
     t1 = y0 - j0;
     t0 = 1 - t1;
 
-    Result[coords] = s0 * (t0 * Input[uint2(i0, j0)] + t1 * Input[uint2(i0, j1)]) +
-        s1 * (t0 * Input[uint2(i1, j0)] + t1 * Input[uint2(i1, j1)]);
+    d[id] = s0 * (t0 * d0_copy[IX(i0, j0)] + t1 * d0_copy[IX(i0, j1)]) +
+        s1 * (t0 * d0_copy[IX(i1, j0)] + t1 * d0_copy[IX(i1, j1)]);
+
+    if (draw) {
+        renderTexture[uint2(id % n, id / n)] = float4(d[id], d[id], d[id], 0.0);
+    }
 }
 
-[numthreads(8, 8, 1)]
-void AddSourceTexture(uint3 id : SV_DispatchThreadID) {
-    Result[id.xy] = Result[id.xy] + dt * Input[id.xy];
+[numthreads(256, 1, 1)]
+void ProjectionFirstPart(uint id : SV_DispatchThreadID)
+{   
+    float h = 1.0 / n;
+    uint2 coords = uint2(id % n, id / n);
+    div[id] = -0.5 * h * (u[IX(coords + uint2(1, 0))] - u[IX(coords - uint2(1, 0))] + v[IX(coords + uint2(0, 1))] - v[IX(coords - uint2(0, 1))]) / n;
+    p[id] = 0.0;
 }
 
-[numthreads(8, 8, 1)]
-void DensityFade(uint3 id : SV_DispatchThreadID) {
-    Result[id.xy] = Result[id.xy] - dt;
+[numthreads(256, 1, 1)]
+void ProjectionLastPart(uint id : SV_DispatchThreadID)
+{   
+    float h = 1.0 / n;
+    uint2 coords = uint2(id % n, id / n);
+    u[id] -= 0.5 * n * (p[IX(coords + uint2(1, 0))] - p[IX(coords - uint2(1, 0))]) / h;
+    v[id] -= 0.5 * n * (p[IX(coords + uint2(0, 1))] - p[IX(coords - uint2(0, 1))]) / h;
 }
