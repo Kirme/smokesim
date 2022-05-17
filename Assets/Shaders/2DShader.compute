@@ -4,16 +4,17 @@ bool draw;
 float a;
 float c;
 
+// Color scales
 float rScale;
 float gScale;
 float bScale;
 
-RWStructuredBuffer<float> u;
-RWStructuredBuffer<float> u0;
-RWStructuredBuffer<float> v;
-RWStructuredBuffer<float> v0;
-RWStructuredBuffer<float> d;
-RWStructuredBuffer<float> d0;
+RWStructuredBuffer<float> u; //  Calculated horizontal velocity
+RWStructuredBuffer<float> u0; // Initial horizontal velocity
+RWStructuredBuffer<float> v; // Calculated vertical velocity
+RWStructuredBuffer<float> v0; // Initial vertical velocity
+RWStructuredBuffer<float> d; // Calculated density
+RWStructuredBuffer<float> d0; // Initial density
 
 RWStructuredBuffer<float> p;
 RWStructuredBuffer<float> div;
@@ -25,30 +26,35 @@ StructuredBuffer<float> d0_copy;
 StructuredBuffer<float> u_copy;
 StructuredBuffer<float> v_copy;
 
-RWTexture2D<float4> renderTexture;
+RWTexture2D<float4> renderTexture; // Final texture
 
+// Define kernels
 #pragma kernel AddSource
 #pragma kernel Diffusion
 #pragma kernel Advection
 #pragma kernel ProjectionFirstPart
 #pragma kernel ProjectionLastPart
 
+// Translate index from 2D to 1D
 int IX(uint i, uint j)
 {
     return i + n * j;
 }
 
+// Translate index from 2D to 1D
 int IX(uint2 coords)
 {
     return coords.x + n * coords.y;
 }
 
+// Add fluid source to simulation, modified by timestep
 [numthreads(256, 1, 1)]
 void AddSource(uint id : SV_DispatchThreadID)
 {
     x[id] = x[id] + dt * s[id];
 }
 
+// Calculate diffusion
 [numthreads(256, 1, 1)]
 void Diffusion(uint id : SV_DispatchThreadID)
 {
@@ -58,6 +64,7 @@ void Diffusion(uint id : SV_DispatchThreadID)
         (x[IX(coords - uint2(1, 0))] + x[IX(coords + uint2(1, 0))] + x[IX(coords - uint2(0, 1))] + x[IX(coords + uint2(0, 1))])) / c;
 }
 
+// Calculate advection
 [numthreads(256, 1, 1)]
 void Advection(uint id : SV_DispatchThreadID)
 {
@@ -65,13 +72,13 @@ void Advection(uint id : SV_DispatchThreadID)
     float x0, y0, s0, s1, t0, t1;
 
     int i0, j0, i1, j1;
-    uint2 coords = uint2(id % n, id / n);
+    uint2 coords = uint2(id % n, id / n); // Calculated coordinates
     x0 = coords.x - dt0 * u_copy[id];
     y0 = coords.y - dt0 * v_copy[id];
 
+    // Clamp x0 and y0
     if (x0 < 0.5) x0 = 0.5;
     if (y0 < 0.5) y0 = 0.5;
-
     if (x0 > n + 0.5) x0 = n + 0.5;
     if (y0 > n + 0.5) y0 = n + 0.5;
 
@@ -86,14 +93,17 @@ void Advection(uint id : SV_DispatchThreadID)
     t1 = y0 - j0;
     t0 = 1 - t1;
 
+    // Main advection calculation
     d[id] = s0 * (t0 * d0_copy[IX(i0, j0)] + t1 * d0_copy[IX(i0, j1)]) +
         s1 * (t0 * d0_copy[IX(i1, j0)] + t1 * d0_copy[IX(i1, j1)]);
 
+    // Set output to renderTexture after final calculation
     if (draw) {
         renderTexture[uint2(id % n, id / n)] = float4(d[id] * rScale, d[id] * gScale, d[id] * bScale, 0.0);
     }
 }
 
+// First part of projection
 [numthreads(256, 1, 1)]
 void ProjectionFirstPart(uint id : SV_DispatchThreadID)
 {   
@@ -103,6 +113,7 @@ void ProjectionFirstPart(uint id : SV_DispatchThreadID)
     p[id] = 0.0;
 }
 
+// Second part of projection
 [numthreads(256, 1, 1)]
 void ProjectionLastPart(uint id : SV_DispatchThreadID)
 {   
